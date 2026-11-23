@@ -1,0 +1,179 @@
+/* AZUMI — estilos propios, dentro del <head>, como en el ejemplo del profe */
+html{
+    height:100%;
+}
+
+main{
+    flex:1;
+}
+
+/* Color de fondo de toda la página y color del texto */
+body
+{
+    background:#fff6fa;
+    font-family:'Segoe UI',system-ui,sans-serif;
+    color:#4a2c3f;
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Nombre de la marca en el navbar */
+.navbar-brand
+{ 
+    font-weight:800; 
+    letter-spacing:2px; 
+}
+
+.info-card 
+{
+    max-width: 700px;
+    width: 90%;
+}
+
+/* Tarjetas: sin borde, con sombrita rosa y esquinas redondas */
+.card
+{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+.card-img-top
+{
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Botón rosa de AZUMI */
+.btn-rosa{ 
+    background:#f3aacb; 
+    color:#fff; 
+    border:none; 
+    border-radius:2rem; 
+}
+.btn-rosa:hover
+{ 
+    background:#f3aacb; 
+    color:#fff; 
+}
+
+/* Precios en lila */
+.text-lila
+{ 
+    color:#8b6fc0; 
+}
+
+/* Etiquetas de las tarjetas */
+.badge-genero
+{ 
+    background:#cbb8f5; 
+    color:#4a2c3f; 
+}
+
+/* Pie de página rosa */
+footer
+{ 
+    background:#fdeaf2; 
+    color:#4a2c3f; 
+}
+.social-icons a{
+    color:#df82b1;
+    font-size:2rem;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#c95d97;
+    transform:translateY(-4px);
+}
+
+.social-icons i{
+    display:inline-block;
+}
+
+/* Escritorio */
+#carrusel .carousel-item img{
+    height: 420px;
+    object-fit: cover;
+}
+
+/* Móvil */
+@media (max-width: 576px){
+    #carrusel .carousel-item img{
+        height: 320px;
+    }
+}
+/* Efecto de los íconos de redes: se levantan y se les pone sombra rosa al pasar el mouse */
+.efecto-icono
+{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.efecto-icono:hover
+{
+    transform: translateY(-15px);
+    filter: drop-shadow(0 4px 6px #e79ec0);
+}
+
+/* Íconos de redes en Contacto, en grande y en rosa */
+.redes-contacto i
+{ 
+    font-size:2.5rem; 
+    color:#d97ba8; 
+}
+
+.rounded-circle
+{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f3a7c6;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+.formulario-card
+{
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+.contacto-card
+{
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* Móvil */
+@media (max-width:576px)
+{
+
+    .formulario-card{
+        padding:20px;
+    }
+
+    .contacto-card
+    {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .contacto-card h4{
+        font-size:1.3rem;
+        margin-bottom:5px;
+    }
+
+    .contacto-card h6{
+        font-size:.75rem;
+        margin-bottom:3px;
+    }
+
+    .contacto-card small{
+        font-size:.6rem;
+        display:block;
+    }
+}
